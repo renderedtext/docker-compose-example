@@ -1,0 +1,22 @@
+# docker-compose handles setting up the 'db' host in Rails's container
+# with the 'links:' option
+# credentials are exported by Semaphore
+default: &default
+  adapter: postgresql
+  host: db
+  username: postgres
+  password:
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: dev_db
+
+test:
+  <<: *default
+  database: test_db
+
+production:
+  <<: *default
+  database: prod_db
