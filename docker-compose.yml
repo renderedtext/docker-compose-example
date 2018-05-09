@@ -9,4 +9,4 @@ services:
     depends_on:
       - db
   db:
-    image: postgres
+    image: postgres:9.6
