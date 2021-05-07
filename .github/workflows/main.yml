@@ -32,7 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          sudo rm -rf "/webapp/docker-compose-example-1/docker-compose-example-1/log"
+          sudo rm -rf /webapp/*
           cd /home/ubuntu/docker-compose-example-1
           sudo git stash
           sudo git pull origin master
