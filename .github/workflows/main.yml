@@ -22,13 +22,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
+     # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           cd /home/ubuntu/docker-compose-example-1
