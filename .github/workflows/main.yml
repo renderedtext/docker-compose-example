@@ -32,7 +32,6 @@ jobs:
           cd /webapp/docker-compose-example-1
           sudo git stash
           sudo git pull origin master
-          sudo git stash apply
           sudo docker-compose down
           sudo docker-compose up -d --build
           
