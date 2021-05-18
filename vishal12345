@@ -1,3 +1,4 @@
 setting
   DB_setting: dashboard
   password: abcdefghijklmnopqrstuvwxyz
+  connections: test
